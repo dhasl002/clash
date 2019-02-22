@@ -187,4 +187,40 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         configuration.planeDetection = [.horizontal, .vertical]
         sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
     }
+    
+    // MARK: - Placing AR Content
+    
+    /// - Tag: PlaceObject
+    @IBAction func handleSceneTap(_ sender: UITapGestureRecognizer) {
+        print("scene tapped!")
+        // Hit test to find a place for a virtual object.
+        guard let hitTestResult = sceneView
+            .hitTest(sender.location(in: sceneView), types: [.existingPlaneUsingGeometry, .estimatedHorizontalPlane])
+            .first
+            else { return }
+        
+        // Remove exisitng anchor and add new anchor
+        if let existingAnchor = virtualObjectAnchor {
+            sceneView.session.remove(anchor: existingAnchor)
+        }
+        if #available(iOS 12.0, *) {
+            virtualObjectAnchor = ARAnchor(name: virtualObjectAnchorName, transform: hitTestResult.worldTransform)
+        } else {
+            // Fallback on earlier versions
+        }
+        sceneView.session.add(anchor: virtualObjectAnchor!)
+    }
+    
+    var virtualObjectAnchor: ARAnchor?
+    let virtualObjectAnchorName = "virtualObject"
+    
+    var virtualObject: SCNNode = {
+        guard let sceneURL = Bundle.main.url(forResource: "cube", withExtension: "scn", subdirectory: "Assets.scnassets"),
+            let referenceNode = SCNReferenceNode(url: sceneURL) else {
+                fatalError("can't load virtual object")
+        }
+        referenceNode.load()
+        
+        return referenceNode
+    }()
 }
