@@ -10,6 +10,15 @@
 		112FE5671F4F95A200BF85EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112FE5661F4F95A200BF85EA /* Assets.xcassets */; };
 		59F02A0F2220426900FD8678 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F02A0D2220426900FD8678 /* Plane.swift */; };
 		59F02A102220426900FD8678 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F02A0E2220426900FD8678 /* Utilities.swift */; };
+		59F02A132220A60600FD8678 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F02A122220A60600FD8678 /* Building.swift */; };
+		59F02A152220A70700FD8678 /* GoldMine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F02A142220A70700FD8678 /* GoldMine.swift */; };
+		59F02A182220A95C00FD8678 /* ElixerMine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F02A172220A95C00FD8678 /* ElixerMine.swift */; };
+		59F02A1A2220A9EB00FD8678 /* BuilderHut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F02A192220A9EB00FD8678 /* BuilderHut.swift */; };
+		59F02A1C2220AA9900FD8678 /* Barracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F02A1B2220AA9900FD8678 /* Barracks.swift */; };
+		59F02A1E2220AB8700FD8678 /* Troop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F02A1D2220AB8700FD8678 /* Troop.swift */; };
+		59F02A202224303B00FD8678 /* Landscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F02A1F2224303B00FD8678 /* Landscape.swift */; };
+		59F02A222224324600FD8678 /* DefenseTower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F02A212224324600FD8678 /* DefenseTower.swift */; };
+		59F02A242225C45F00FD8678 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F02A232225C45F00FD8678 /* Grid.swift */; };
 		5C7AB42A20DC114B00693DDD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5C7AB42920DC114B00693DDD /* README.md */; };
 		842316E01F2030C300D189D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842316DF1F2030C300D189D1 /* AppDelegate.swift */; };
 		842316E41F2030C300D189D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842316E31F2030C300D189D1 /* ViewController.swift */; };
@@ -22,6 +31,15 @@
 		112FE5661F4F95A200BF85EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59F02A0D2220426900FD8678 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		59F02A0E2220426900FD8678 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		59F02A122220A60600FD8678 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		59F02A142220A70700FD8678 /* GoldMine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldMine.swift; sourceTree = "<group>"; };
+		59F02A172220A95C00FD8678 /* ElixerMine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElixerMine.swift; sourceTree = "<group>"; };
+		59F02A192220A9EB00FD8678 /* BuilderHut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderHut.swift; sourceTree = "<group>"; };
+		59F02A1B2220AA9900FD8678 /* Barracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barracks.swift; sourceTree = "<group>"; };
+		59F02A1D2220AB8700FD8678 /* Troop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Troop.swift; sourceTree = "<group>"; };
+		59F02A1F2224303B00FD8678 /* Landscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landscape.swift; sourceTree = "<group>"; };
+		59F02A212224324600FD8678 /* DefenseTower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefenseTower.swift; sourceTree = "<group>"; };
+		59F02A232225C45F00FD8678 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		5C7AB42920DC114B00693DDD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		842316DC1F2030C300D189D1 /* ARPersistence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARPersistence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842316DF1F2030C300D189D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,8 +86,17 @@
 			isa = PBXGroup;
 			children = (
 				59F02A0D2220426900FD8678 /* Plane.swift */,
+				59F02A232225C45F00FD8678 /* Grid.swift */,
+				59F02A122220A60600FD8678 /* Building.swift */,
+				59F02A142220A70700FD8678 /* GoldMine.swift */,
+				59F02A212224324600FD8678 /* DefenseTower.swift */,
+				59F02A172220A95C00FD8678 /* ElixerMine.swift */,
+				59F02A192220A9EB00FD8678 /* BuilderHut.swift */,
+				59F02A1B2220AA9900FD8678 /* Barracks.swift */,
+				59F02A1D2220AB8700FD8678 /* Troop.swift */,
 				59F02A0E2220426900FD8678 /* Utilities.swift */,
 				842316E31F2030C300D189D1 /* ViewController.swift */,
+				59F02A1F2224303B00FD8678 /* Landscape.swift */,
 				842316DF1F2030C300D189D1 /* AppDelegate.swift */,
 				842316E51F2030C300D189D1 /* Main.storyboard */,
 				842316EA1F2030C300D189D1 /* LaunchScreen.storyboard */,
@@ -170,8 +197,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F02A1C2220AA9900FD8678 /* Barracks.swift in Sources */,
 				842316E41F2030C300D189D1 /* ViewController.swift in Sources */,
 				59F02A0F2220426900FD8678 /* Plane.swift in Sources */,
+				59F02A152220A70700FD8678 /* GoldMine.swift in Sources */,
+				59F02A1A2220A9EB00FD8678 /* BuilderHut.swift in Sources */,
+				59F02A132220A60600FD8678 /* Building.swift in Sources */,
+				59F02A1E2220AB8700FD8678 /* Troop.swift in Sources */,
+				59F02A242225C45F00FD8678 /* Grid.swift in Sources */,
+				59F02A202224303B00FD8678 /* Landscape.swift in Sources */,
+				59F02A222224324600FD8678 /* DefenseTower.swift in Sources */,
+				59F02A182220A95C00FD8678 /* ElixerMine.swift in Sources */,
 				59F02A102220426900FD8678 /* Utilities.swift in Sources */,
 				842316E01F2030C300D189D1 /* AppDelegate.swift in Sources */,
 			);

@@ -41,7 +41,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         
         sceneView.debugOptions = [ .showFeaturePoints ]
         UIApplication.shared.isIdleTimerDisabled = true
-        
     }
     
     func session(_ session: ARSession, didUpdate frame: ARFrame) {
@@ -128,14 +127,14 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     }
     
     func loadCubeAsset(position: SCNVector3, name: String) -> SCNNode{
-        guard let sceneURL = Bundle.main.url(forResource: "cube", withExtension: "scn", subdirectory: "Assets.scnassets"),
+        guard let sceneURL = Bundle.main.url(forResource: "barn", withExtension: "scn", subdirectory: "Assets.scnassets"),
             let referenceNode = SCNReferenceNode(url: sceneURL) else {
                 fatalError("can't load virtual object")
         }
         referenceNode.load()
         referenceNode.position = position
         referenceNode.name = name
-        referenceNode.scale = SCNVector3(0.1, 0.1, 0.1)
+        referenceNode.scale = SCNVector3(0.005, 0.005, 0.005)
         
         return referenceNode
     }
